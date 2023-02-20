@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background: linear-gradient(to top left ,rgb(238, 87, 155) 0%, rgb(130, 6, 218) );
+    background-repeat: no-repeat;
+    background-size: cover;
+   min-height: 100vh;
+   display: grid;
+   place-items: center;}
+.card{
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.card-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8rem;
+    min-width: 100px;
+    padding: 7rem 10rem;
+    font-size: 2.4rem;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.3s;
+    
+}
+.playerID{
+    color: #4a4242;
+}
+.score{
+    color: rgb(243, 12, 43);
+}
+.middle{
+    display: flex;
+    width: 0;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding:1rem 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: #fff;
+    margin: 1rem 0;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px #cccccc9b;
+}
+.card__left{
+   /* background-color:rgba(235, 67, 184, 0.684) ;*/
+    
+}
+.card__right{
+  /*  background-color:rgba(232, 16, 74, 0.16);*/
+}
+.dice-image{
+    margin-bottom: 7rem;
+    width: 8rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px #cccccc9b;
+}
+.screen{
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: rgb(237, 4, 117);
+    padding: 2rem 3rem;
+}
+.hidden{
+    display: none;
+}
+.apply-opacity{
+    opacity: 0.3;
+    border: 1px solid rgba(255, 255, 255, 255);
+}
+
+.won{
+    background-color: #4a4242;
+}
+.won .playerID{
+    color: rgb(237, 4, 117);
+}
